@@ -5,14 +5,13 @@
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
 main {
   display: flex;
-  margin: 0 18em;
 }
 
 /*Estilização Container Laranja: Sendans*/
@@ -20,12 +19,13 @@ main {
   padding: 40px 45px;
   background-color: hsl(31, 77%, 52%);
   border-radius: 10px 0 0 10px;
-  height: 24em;
+  max-width: 11.8em;
+  flex-basis: 100%
 }
 
 .icon-sedans {
   margin-top: 3.4px;
-  height: 38px;
+  height: 2.5rem;
 }
 
 .headings-sedans {
@@ -39,8 +39,8 @@ main {
   font-family: 'Lexend Deca', sans-serif;
   margin-top: 22px;
   color: hsla(0, 0%, 100%, 0.75);
-  line-height: 23px;
-  font-size: 14px;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .button-sedans {
@@ -69,27 +69,29 @@ main {
 .container-suvs {
   padding: 40px 45px;
   background-color:  hsl(184, 100%, 22%);
-  height: 24em;
+  max-width: 11.8em;
+  flex-basis: 100%
 }
 
 .icon-suvs {
   margin-top: 3.4px;
-  height: 38px;
+  height: 2.5rem;
 }
 
 .headings-suvs {
   font-family: 'Big Shoulders Display', sans-serif;
   color: hsla(0, 0%, 100%, 0.75);
   margin-top: 30px;
-  font-size: 2.4em;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
 
 .paragraph-suvs {
   font-family: 'Lexend Deca', sans-serif;
   margin-top: 22px;
   color: hsla(0, 0%, 100%, 0.75);
-  line-height: 23px;
-  font-size: 14px;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .button-suvs {
@@ -118,12 +120,13 @@ main {
   padding: 40px 45px;
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 10px 10px 0;
-  height: 24em;
+  max-width: 12.8em;
+  flex-basis: 100%
 }
 
 .icon-luxury {
   margin-top: 3.4px;
-  height: 38px;
+  height: 2.5rem;
 }
 
 
@@ -138,8 +141,8 @@ main {
   font-family: 'Lexend Deca', sans-serif;
   margin-top: 22px;
   color: hsla(0, 0%, 100%, 0.75);
-  line-height: 23px;
-  font-size: 14px;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 
@@ -169,41 +172,36 @@ main {
 
 @media screen and (max-width: 1020px) {
   body {
+    
+    margin: 0 10px;
+  }
+  main {
     display: flex;
-    margin-bottom: 45em;
+    flex-direction: column;
+    max-width: 17em;
   }
   
-  main {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-
-  }
 
   /*ESTILIZAÇÃO MOBILE: SEDANS - LARANJA*/
   .container-sedans {
     margin-top: 80px;
     border-radius: 10px 10px 0 0 ;
-    width: 14em;
-    height: 30em;
+    
   }
   .button-sedans {
     margin-top: 30px;
   }
   
  /*ESTILIZAÇÃO MOBILE: SUVS - AZUL ESVERDEADO*/
- .container-suvs {
-  width: 14em;
-  height: 30em;
-}
  .button-suvs {
    margin-top: 30px;
  }
 
  /*ESTILIZAÇÃO MOBILE: SUVS - VERDE ESCURO*/
+
  .container-luxury {
    border-radius: 0 0 10px 10px ;
-   width: 14em;
+   margin-bottom: 80px;
 }
  
  .button-luxury {
